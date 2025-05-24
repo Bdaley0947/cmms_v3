@@ -48,3 +48,10 @@ class CMMSApp extends StatelessWidget {
     );
   }
 }
+
+// No additional code is needed here unless you want to add something outside the CMMSApp class,
+// such as a main() function to run the app:
+
+void main() {
+  runApp(const CMMSApp());
+}

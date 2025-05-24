@@ -1,5 +1,5 @@
-// lib/models/work_order.dart
 import 'package:json_annotation/json_annotation.dart';
+
 part 'work_order.g.dart';
 
 @JsonSerializable()
@@ -36,5 +36,6 @@ class WorkOrder {
 
   factory WorkOrder.fromJson(Map<String, dynamic> json) =>
       _$WorkOrderFromJson(json);
+
   Map<String, dynamic> toJson() => _$WorkOrderToJson(this);
 }

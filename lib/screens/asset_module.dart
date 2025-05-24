@@ -49,9 +49,9 @@ class _AssetModuleState extends State<AssetModule> {
                 5: FixedColumnWidth(120),
               },
               children: [
-                TableRow(
-                  decoration: const BoxDecoration(color: Colors.black12),
-                  children: const [
+                const TableRow(
+                  decoration: BoxDecoration(color: Colors.black12),
+                  children: [
                     Padding(
                       padding: EdgeInsets.all(8.0),
                       child: Text('ID',

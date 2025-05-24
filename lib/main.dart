@@ -49,7 +49,7 @@ class _CMMSHomePageState extends State<CMMSHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('CMMS FastBuild')),
+      appBar: AppBar(title: const Text('CMMS FastBuild')),
       body: Row(
         children: [
           NavigationRail(

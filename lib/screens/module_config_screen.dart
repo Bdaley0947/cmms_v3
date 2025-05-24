@@ -69,8 +69,8 @@ class _CMMSModuleConfigScreenState extends State<CMMSModuleConfigScreen> {
         padding: const EdgeInsets.all(16.0),
         children: [
           DataTable(
-            headingRowColor: MaterialStateProperty.all(
-              Colors.black.withOpacity(0.05),
+            headingRowColor: WidgetStateProperty.all(
+              Colors.black.withAlpha((0.05 * 255).toInt()),
             ),
             columns: const [
               DataColumn(label: Text('Module')),
@@ -90,7 +90,7 @@ class _CMMSModuleConfigScreenState extends State<CMMSModuleConfigScreen> {
                       value: module['status'],
                       items: statusOptions
                           .map(
-                            (status) => DropdownMenuItem(
+                            (status) => DropdownMenuItem<String>(
                               value: status,
                               child: Text(status),
                             ),
@@ -119,8 +119,14 @@ class _CMMSModuleConfigScreenState extends State<CMMSModuleConfigScreen> {
                   DataCell(
                     Row(
                       children: [
-                        TextButton(onPressed: () {}, child: const Text('Jump')),
-                        TextButton(onPressed: () {}, child: const Text('Hide')),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text('Jump'),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text('Hide'),
+                        ),
                       ],
                     ),
                   ),
