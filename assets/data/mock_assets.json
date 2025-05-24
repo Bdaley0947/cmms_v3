@@ -1,0 +1,18 @@
+[
+  {
+    "id": "A-101",
+    "name": "Hydraulic Press",
+    "location": "Forge Line 1",
+    "status": "Running",
+    "type": "Mechanical",
+    "criticality": "High"
+  },
+  {
+    "id": "A-102",
+    "name": "Cooling Tower",
+    "location": "Roof Unit B",
+    "status": "Idle",
+    "type": "HVAC",
+    "criticality": "Medium"
+  }
+]

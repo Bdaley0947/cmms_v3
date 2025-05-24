@@ -1,0 +1,18 @@
+[
+  {
+    "id": "PM-001",
+    "assetId": "A-101",
+    "assetName": "Hydraulic Press",
+    "task": "Lubricate all moving parts",
+    "frequency": "Monthly",
+    "nextDue": "2025-06-01"
+  },
+  {
+    "id": "PM-002",
+    "assetId": "A-102",
+    "assetName": "Cooling Tower",
+    "task": "Flush coolant lines",
+    "frequency": "Quarterly",
+    "nextDue": "2025-07-01"
+  }
+]

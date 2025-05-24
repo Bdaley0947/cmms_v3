@@ -1,0 +1,15 @@
+# CMMS Analysis Options (Clean)
+# This file configures the Dart analyzer for cmms_v3.
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+linter:
+  rules:
+    always_declare_return_types: true
+    avoid_print: true
+    prefer_const_constructors: true
+    prefer_final_fields: true
+    use_key_in_widget_constructors: true

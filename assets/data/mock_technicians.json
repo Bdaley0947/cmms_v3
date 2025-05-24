@@ -1,0 +1,16 @@
+[
+  {
+    "id": "T-001",
+    "name": "Alex R.",
+    "trade": "Electrician",
+    "shift": "Day",
+    "status": "Active"
+  },
+  {
+    "id": "T-002",
+    "name": "Sam T.",
+    "trade": "Millwright",
+    "shift": "Night",
+    "status": "Active"
+  }
+]
