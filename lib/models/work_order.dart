@@ -36,6 +36,5 @@ class WorkOrder {
 
   factory WorkOrder.fromJson(Map<String, dynamic> json) =>
       _$WorkOrderFromJson(json);
-
   Map<String, dynamic> toJson() => _$WorkOrderToJson(this);
 }
