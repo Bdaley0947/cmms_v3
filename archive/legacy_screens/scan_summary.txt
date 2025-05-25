@@ -1,0 +1,27 @@
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/asset_module.dart:            ElevatedButton(onPressed: () {}, child: const Text('Add')),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/asset_module.dart:            ElevatedButton(onPressed: () {}, child: const Text('Save')),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/home_screen.dart:              onPressed: () {
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/home_screen.dart:                        onPressed: () => setState(() => _currentIndex = 0),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/home_screen.dart:                        onPressed: () => setState(() => _currentIndex = 1),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/home_screen.dart:                        onPressed: () => setState(() => _currentIndex = 2),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/home_screen.dart:                        onPressed: () => setState(() => _currentIndex = 3),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/home_screen.dart:                        onPressed: () => setState(() => _currentIndex = 4),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/module_config_screen.dart:          DataTable(
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/module_config_screen.dart:                  DataCell(Text(module['name'])),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/module_config_screen.dart:                  DataCell(
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/module_config_screen.dart:                        setState(() {
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/module_config_screen.dart:                  DataCell(Text('${module['complete']}%')),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/module_config_screen.dart:                  DataCell(Text('${module['critical']}')),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/module_config_screen.dart:                  DataCell(Text('${module['wishlist']}')),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/module_config_screen.dart:                  DataCell(
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/module_config_screen.dart:                        setState(() {
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/module_config_screen.dart:                  DataCell(
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/module_config_screen.dart:                          onPressed: () {},
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/module_config_screen.dart:                          onPressed: () {},
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/pm_module.dart:  Future<void> loadPMs() async {
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/pm_module.dart:    setState(() {
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/shift_packet_builder.dart:            ElevatedButton(onPressed: () {}, child: const Text('Print')),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/shift_packet_builder.dart:            ElevatedButton(onPressed: () {}, child: const Text('Save')),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/shift_packet_builder.dart:              onPressed: () => Navigator.pop(context),
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/technician_module.dart:  Future<void> loadTechnicians() async {
+/home/bdaleycid/cmms/cmms_v3/archive/legacy_screens/technician_module.dart:    setState(() {
