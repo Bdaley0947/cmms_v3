@@ -15,17 +15,17 @@ class WorkRequestModule extends StatelessWidget {
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 20),
-          TextField(
-            decoration: const InputDecoration(labelText: 'Asset'),
+          const TextField(
+            decoration: InputDecoration(labelText: 'Asset'),
           ),
           const SizedBox(height: 10),
-          TextField(
-            decoration: const InputDecoration(labelText: 'Issue Description'),
+          const TextField(
+            decoration: InputDecoration(labelText: 'Issue Description'),
             maxLines: 3,
           ),
           const SizedBox(height: 10),
-          TextField(
-            decoration: const InputDecoration(labelText: 'Requested By'),
+          const TextField(
+            decoration: InputDecoration(labelText: 'Requested By'),
           ),
           const SizedBox(height: 20),
           ElevatedButton(

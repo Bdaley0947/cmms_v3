@@ -5,7 +5,7 @@ class SchedulerModule extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text(
         'Scheduler view placeholder',
         style: TextStyle(fontSize: 18),

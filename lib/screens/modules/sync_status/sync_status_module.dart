@@ -5,11 +5,11 @@ class SyncStatusModule extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(24),
+    return const Padding(
+      padding: EdgeInsets.all(24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
+        children: [
           Text(
             'Data Sync Monitor',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),

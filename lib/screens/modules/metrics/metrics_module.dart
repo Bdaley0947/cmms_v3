@@ -5,19 +5,19 @@ class MetricsModule extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(24),
+    return const Padding(
+      padding: EdgeInsets.all(24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             'Maintenance Metrics',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
-          const SizedBox(height: 16),
+          SizedBox(height: 16),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: const [
+            children: [
               _MetricCard(label: 'WO Backlog', value: '14'),
               _MetricCard(label: 'Avg. Close Time', value: '2.6 days'),
               _MetricCard(label: 'PM Compliance', value: '87%'),
