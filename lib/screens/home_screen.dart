@@ -1,7 +1,22 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int _currentIndex = 0;
+
+  final List<Widget> _moduleScreens = [
+    const Center(child: Text('Assets Table')),
+    const Center(child: Text('PMs Table')),
+    const Center(child: Text('Work Orders Table')),
+    const Center(child: Text('Technicians Table')),
+    const Center(child: Text('Scheduler Table')),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +42,9 @@ class HomeScreen extends StatelessWidget {
             width: 220,
             padding: const EdgeInsets.all(12),
             color: Colors.grey.shade200,
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 Text("Filters"),
                 SizedBox(height: 12),
                 Text("Metric: 123"),
@@ -37,47 +52,20 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
 
-          // Main panel with top-aligned table
+          // Main content panel
           Expanded(
             child: Column(
               children: [
-                // Table area
+                // Top-aligned table area
                 Expanded(
                   child: Container(
                     alignment: Alignment.topCenter,
                     padding: const EdgeInsets.all(16),
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: SingleChildScrollView(
-                        scrollDirection: Axis.vertical,
-                        child: SizedBox(
-                          width: 1200,
-                          child: DataTable(
-                            columns: const [
-                              DataColumn(label: Text("ID")),
-                              DataColumn(label: Text("Name")),
-                              DataColumn(label: Text("Status")),
-                            ],
-                            rows: const [
-                              DataRow(cells: [
-                                DataCell(Text("1")),
-                                DataCell(Text("Pump A")),
-                                DataCell(Text("Active")),
-                              ]),
-                              DataRow(cells: [
-                                DataCell(Text("2")),
-                                DataCell(Text("Valve B")),
-                                DataCell(Text("Planned")),
-                              ]),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
+                    child: _moduleScreens[_currentIndex],
                   ),
                 ),
 
-                // Bottom nav bar
+                // Bottom navigation bar
                 Container(
                   height: 60,
                   decoration: BoxDecoration(
@@ -87,11 +75,30 @@ class HomeScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset('assets/icons/assets.png', height: 40),
-                      Image.asset('assets/icons/pms.png', height: 40),
-                      Image.asset('assets/icons/work_orders.png', height: 40),
-                      Image.asset('assets/icons/technicians.png', height: 40),
-                      Image.asset('assets/icons/scheduler.png', height: 40),
+                      IconButton(
+                        icon:
+                            Image.asset('assets/icons/assets.png', height: 40),
+                        onPressed: () => setState(() => _currentIndex = 0),
+                      ),
+                      IconButton(
+                        icon: Image.asset('assets/icons/pms.png', height: 40),
+                        onPressed: () => setState(() => _currentIndex = 1),
+                      ),
+                      IconButton(
+                        icon: Image.asset('assets/icons/work_orders.png',
+                            height: 40),
+                        onPressed: () => setState(() => _currentIndex = 2),
+                      ),
+                      IconButton(
+                        icon: Image.asset('assets/icons/technicians.png',
+                            height: 40),
+                        onPressed: () => setState(() => _currentIndex = 3),
+                      ),
+                      IconButton(
+                        icon: Image.asset('assets/icons/scheduler.png',
+                            height: 40),
+                        onPressed: () => setState(() => _currentIndex = 4),
+                      ),
                     ],
                   ),
                 ),

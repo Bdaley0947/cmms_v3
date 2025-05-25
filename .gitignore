@@ -9,3 +9,13 @@ build/
 *.iml
 .idea/
 .vscode/
+
+# Ignore build, doc output, and backups
+build/
+doc/api/
+backups/
+
+# Ignore build, doc output, and backups
+build/
+doc/api/
+backups/
