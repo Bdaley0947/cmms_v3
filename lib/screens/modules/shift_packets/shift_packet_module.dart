@@ -3,17 +3,17 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import '../../../widgets/module_shell.dart';
 
-class TechnicianModule extends StatefulWidget {
-  const TechnicianModule({super.key});
+class ShiftPacketModule extends StatefulWidget {
+  const ShiftPacketModule({super.key});
 
   @override
-  State<TechnicianModule> createState() => _TechnicianModuleState();
+  State<ShiftPacketModule> createState() => _ShiftPacketModuleState();
 }
 
-class _TechnicianModuleState extends State<TechnicianModule> {
+class _ShiftPacketModuleState extends State<ShiftPacketModule> {
   List<List<String>> tableData = [];
 
-  final List<String> headers = ['ID', 'Name', 'Trade', 'Shift', 'Status'];
+  final List<String> headers = ['ID', 'Task', 'Assigned', 'Shift', 'Status'];
 
   @override
   void initState() {
@@ -22,17 +22,16 @@ class _TechnicianModuleState extends State<TechnicianModule> {
   }
 
   Future<void> loadData() async {
-    final String raw =
-        await rootBundle.loadString('assets/data/mock_technicians.json');
+    final String raw = await rootBundle.loadString('assets/data/mock_pms.json');
     final List<dynamic> jsonData = json.decode(raw);
     setState(() {
       tableData = jsonData.map<List<String>>((item) {
         return [
           item['id'].toString(),
-          item['name'],
-          item['trade'],
-          item['shift'],
-          item['status'],
+          item['instruction'],
+          item['asset'],
+          item['frequency'],
+          item['nextDue'],
         ];
       }).toList();
     });
@@ -41,7 +40,7 @@ class _TechnicianModuleState extends State<TechnicianModule> {
   @override
   Widget build(BuildContext context) {
     return ModuleShell(
-      title: 'Technicians',
+      title: 'Shift Packets',
       headers: headers,
       data: tableData,
       rowBuilder: (row) => row.map((cell) => Text(cell)).toList(),

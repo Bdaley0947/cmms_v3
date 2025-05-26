@@ -1,0 +1,20 @@
+mport 'package:flutter/material.dart';
+
+class AssetModule extends StatelessWidget {
+  const AssetModule({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: const [
+            Icon(Icons.build),
+            Text('Assets'),
+          ],
+        ),
+      ),
+    );
+  }
+}

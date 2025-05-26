@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp": "2025-05-26T04:00:00Z",
+    "message": "System message #0",
+    "type": "warning"
+  },
+  {
+    "timestamp": "2025-05-26T05:00:00Z",
+    "message": "System message #1",
+    "type": "error"
+  },
+  {
+    "timestamp": "2025-05-26T07:00:00Z",
+    "message": "System message #2",
+    "type": "warning"
+  },
+  {
+    "timestamp": "2025-05-26T01:00:00Z",
+    "message": "System message #3",
+    "type": "error"
+  },
+  {
+    "timestamp": "2025-05-26T08:00:00Z",
+    "message": "System message #4",
+    "type": "info"
+  },
+  {
+    "timestamp": "2025-05-26T09:00:00Z",
+    "message": "System message #5",
+    "type": "warning"
+  },
+  {
+    "timestamp": "2025-05-26T04:00:00Z",
+    "message": "System message #6",
+    "type": "error"
+  },
+  {
+    "timestamp": "2025-05-26T09:00:00Z",
+    "message": "System message #7",
+    "type": "error"
+  },
+  {
+    "timestamp": "2025-05-26T09:00:00Z",
+    "message": "System message #8",
+    "type": "info"
+  },
+  {
+    "timestamp": "2025-05-26T08:00:00Z",
+    "message": "System message #9",
+    "type": "info"
+  }
+]

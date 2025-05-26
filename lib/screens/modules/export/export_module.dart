@@ -18,7 +18,8 @@ class ExportModule extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.download),
             title: const Text('Export Closed Work Orders'),
-            subtitle: const Text('Download completed work orders in CSV format.'),
+            subtitle:
+                const Text('Download completed work orders in CSV format.'),
             trailing: ElevatedButton(
               onPressed: () {
                 // Placeholder: export logic
@@ -30,7 +31,8 @@ class ExportModule extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.download),
             title: const Text('Export Asset Registry'),
-            subtitle: const Text('Download current asset list with all metadata.'),
+            subtitle:
+                const Text('Download current asset list with all metadata.'),
             trailing: ElevatedButton(
               onPressed: () {
                 // Placeholder: export logic

@@ -68,20 +68,19 @@ class _SettingsModalState extends State<SettingsModal> {
                   DropdownButton<String>(
                     dropdownColor: Colors.grey[850],
                     value: selectedModule,
-                    items:
-                        defaultFields.keys
-                            .map(
-                              (e) => DropdownMenuItem(
-                                value: e,
-                                child: Text(
-                                  e,
-                                  style: const TextStyle(color: Colors.white),
-                                ),
-                              ),
-                            )
-                            .toList(),
-                    onChanged:
-                        (value) => setState(() => selectedModule = value!),
+                    items: defaultFields.keys
+                        .map(
+                          (e) => DropdownMenuItem(
+                            value: e,
+                            child: Text(
+                              e,
+                              style: const TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: (value) =>
+                        setState(() => selectedModule = value!),
                   ),
                 ],
               ),

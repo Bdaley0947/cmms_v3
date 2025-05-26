@@ -1,40 +1,50 @@
 import 'package:flutter/material.dart';
+import 'dart:convert';
+import 'package:flutter/services.dart';
+import '../../../widgets/module_shell.dart';
 
-class WorkOrderModule extends StatelessWidget {
+class WorkOrderModule extends StatefulWidget {
   const WorkOrderModule({super.key});
 
   @override
+  State<WorkOrderModule> createState() => _WorkOrderModuleState();
+}
+
+class _WorkOrderModuleState extends State<WorkOrderModule> {
+  List<List<String>> tableData = [];
+
+  final List<String> headers = ['ID', 'Asset', 'Trade', 'Priority', 'Status'];
+
+  @override
+  void initState() {
+    super.initState();
+    loadData();
+  }
+
+  Future<void> loadData() async {
+    final String raw =
+        await rootBundle.loadString('assets/data/mock_work_orders_full.json');
+    final List<dynamic> jsonData = json.decode(raw);
+    setState(() {
+      tableData = jsonData.map<List<String>>((item) {
+        return [
+          item['id'].toString(),
+          item['asset'],
+          item['trade'],
+          item['priority'],
+          item['status'],
+        ];
+      }).toList();
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: DataTable(
-          columns: const [
-            DataColumn(label: Text("WO ID")),
-            DataColumn(label: Text("Asset")),
-            DataColumn(label: Text("Priority")),
-            DataColumn(label: Text("Status")),
-            DataColumn(label: Text("Due Date")),
-          ],
-          rows: const [
-            DataRow(cells: [
-              DataCell(Text("WO001")),
-              DataCell(Text("Hydraulic Press")),
-              DataCell(Text("High")),
-              DataCell(Text("Open")),
-              DataCell(Text("2025-06-03")),
-            ]),
-            DataRow(cells: [
-              DataCell(Text("WO002")),
-              DataCell(Text("Compressor A")),
-              DataCell(Text("Medium")),
-              DataCell(Text("Closed")),
-              DataCell(Text("2025-05-20")),
-            ]),
-          ],
-        ),
-      ),
+    return ModuleShell(
+      title: 'Work Orders',
+      headers: headers,
+      data: tableData,
+      rowBuilder: (row) => row.map((cell) => Text(cell)).toList(),
     );
   }
 }

@@ -17,7 +17,8 @@ class DashboardModule extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 16),
-          child: Text("This is a placeholder for upcoming metrics, KPIs, and summaries."),
+          child: Text(
+              "This is a placeholder for upcoming metrics, KPIs, and summaries."),
         ),
       ],
     );

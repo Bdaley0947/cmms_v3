@@ -46,7 +46,9 @@ class _MetricCard extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(value, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+              Text(value,
+                  style: const TextStyle(
+                      fontSize: 22, fontWeight: FontWeight.bold)),
               const SizedBox(height: 4),
               Text(label, style: const TextStyle(fontSize: 14)),
             ],

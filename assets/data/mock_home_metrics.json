@@ -1,0 +1,12 @@
+{
+  "overduePMs": 5,
+  "openWorkOrders": 47,
+  "offlineAssets": 9,
+  "alerts": [
+    "Alert #0",
+    "Alert #1",
+    "Alert #2",
+    "Alert #3",
+    "Alert #4"
+  ]
+}
