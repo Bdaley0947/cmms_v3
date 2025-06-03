@@ -1,0 +1,20 @@
+Scanning /home/bdaleycid/cmms_v3/lib/screens/core/core_dashboard.dart
+3:class CoreDashboard extends StatelessWidget {
+Scanning /home/bdaleycid/cmms_v3/lib/screens/modules/assets_screen.dart
+4:class AssetsScreen extends StatelessWidget {
+Scanning /home/bdaleycid/cmms_v3/lib/screens/modules/work_orders_screen.dart
+3:class WorkOrdersScreen extends StatelessWidget {
+Scanning /home/bdaleycid/cmms_v3/lib/screens/modules/reports_screen.dart
+3:class ReportsScreen extends StatelessWidget {
+Scanning /home/bdaleycid/cmms_v3/lib/main.dart
+6:class CMMSApp extends StatelessWidget {
+Scanning /home/bdaleycid/cmms_v3/lib/models/asset.dart
+Scanning /home/bdaleycid/cmms_v3/lib/models/service_request.dart
+Scanning /home/bdaleycid/cmms_v3/lib/services/offline_sync_service.dart
+6:    print('Queued: \$action');
+11:      print('Syncing: \$action');
+Scanning /home/bdaleycid/cmms_v3/lib/services/email_gateway.dart
+4:      print('Parsed service request from email.');
+6:      print('No actionable command found.');
+Scanning /home/bdaleycid/cmms_v3/lib/utils/logger.dart
+3:  print('[$timestamp] [$level] \$action');

@@ -1,0 +1,4 @@
+Analyzing cmms_v3...                                            
+
+   info • Parameter 'key' could be a super parameter • lib/screens/modules/assets_screen.dart:11:9 • use_super_parameters
+

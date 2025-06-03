@@ -1,0 +1,6 @@
+Analyzing cmms_v3...                                            
+
+   info • Parameter 'key' could be a super parameter • lib/screens/modules/assets_screen.dart:11:9 • use_super_parameters
+warning • The value of the field '_syncQueue' isn't used • lib/services/offline_sync_service.dart:2:22 • unused_field
+warning • The value of the local variable 'timestamp' isn't used • lib/utils/logger.dart:2:9 • unused_local_variable
+

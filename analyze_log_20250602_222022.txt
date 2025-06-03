@@ -1,0 +1,12 @@
+Analyzing cmms_v3...                                            
+
+   info • Constructors for public widgets should have a named 'key' parameter • lib/screens/modules/assets_screen.dart:4:7 • use_key_in_widget_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/screens/modules/reports_screen.dart:3:7 • use_key_in_widget_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/screens/modules/work_orders_screen.dart:3:7 • use_key_in_widget_constructors
+   info • Don't invoke 'print' in production code • lib/services/email_gateway.dart:4:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/services/email_gateway.dart:6:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/services/offline_sync_service.dart:6:5 • avoid_print
+warning • The value of the local variable 'action' isn't used • lib/services/offline_sync_service.dart:10:14 • unused_local_variable
+   info • Don't invoke 'print' in production code • lib/services/offline_sync_service.dart:11:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/utils/logger.dart:3:3 • avoid_print
+

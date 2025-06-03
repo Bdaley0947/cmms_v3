@@ -1,0 +1,6 @@
+Analyzing cmms_v3...                                            
+
+warning • Unused import: '../utils/logger.dart' • lib/services/offline_sync_service.dart:1:8 • unused_import
+  error • The method 'logMessage' isn't defined for the type 'OfflineSyncService' • lib/services/offline_sync_service.dart:6:5 • undefined_method
+  error • The method 'parseEmail' isn't defined for the type 'EmailGateway' • test/email_gateway_test.dart:7:13 • undefined_method
+
