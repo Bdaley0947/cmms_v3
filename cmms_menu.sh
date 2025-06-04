@@ -60,7 +60,7 @@ while true; do
       echo "No changes to commit."
     else
       git commit -m "Auto commit from CMMS menu: $(date '+%Y-%m-%d %H:%M:%S')"
-      git push
+    git push -u origin main
     fi
     [ -t 0 ] && read -p "Press enter to return to menu..."
 
