@@ -1,0 +1,6 @@
+GTK_IM_MODULE=cros
+QT_QPA_PLATFORMTHEME=gtk2
+XDG_SESSION_TYPE=wayland
+WAYLAND_DISPLAY_LOW_DENSITY=wayland-1
+WAYLAND_DISPLAY=wayland-0
+PATH=/home/bdaleycid:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/bdaleycid/flutter/bin

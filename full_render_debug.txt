@@ -1,0 +1,137 @@
+[✓] Flutter (Channel stable, 3.32.0, on Debian GNU/Linux 12 (bookworm) 6.6.76-g027a1f314c8f, locale en_US.UTF-8) [120ms]
+    • Flutter version 3.32.0 on channel stable at /home/bdaleycid/flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision be698c48a6 (2 weeks ago), 2025-05-19 12:59:14 -0700
+    • Engine revision 1881800949
+    • Dart version 3.8.0
+    • DevTools version 2.45.1
+
+[✓] Chrome - develop for the web [36ms]
+    • CHROME_EXECUTABLE = /usr/bin/chromium
+
+[✓] Linux toolchain - develop for Linux desktop [883ms]
+    • Debian clang version 14.0.6
+    • cmake version 3.25.1
+    • ninja version 1.11.1
+    • pkg-config version 1.8.1
+    ! Unable to access driver information using 'eglinfo'.
+      It is likely available from your distribution (e.g.: apt install mesa-utils)
+
+[✓] VS Code (version unknown) [25ms]
+    • VS Code at /usr/share/code
+    • Flutter extension version 3.112.0
+    ✗ Unable to determine VS Code version.
+
+[✓] Connected device (2 available) [623ms]
+    • Linux (desktop) • linux  • linux-x64      • Debian GNU/Linux 12 (bookworm) 6.6.76-g027a1f314c8f
+    • Chrome (web)    • chrome • web-javascript • Chromium 137.0.7151.55 built on Debian GNU/Linux 12 (bookworm)
+
+[✓] Network resources [833ms]
+    • All expected network resources are available.
+
+• No issues found!
+Found 2 connected devices:
+  Linux (desktop) • linux  • linux-x64      • Debian GNU/Linux 12 (bookworm) 6.6.76-g027a1f314c8f
+  Chrome (web)    • chrome • web-javascript • Chromium 137.0.7151.55 built on Debian GNU/Linux 12 (bookworm)
+
+Run "flutter emulators" to list and start any available device emulators.
+
+If you expected another device to be detected, please run "flutter doctor" to diagnose potential issues. You may also try increasing the time to wait for connected devices with the "--device-timeout" flag. Visit https://flutter.dev/setup/ for troubleshooting tips.
+Launching lib/main.dart on Linux in debug mode...
+Building Linux application...                                   
+✓ Built build/linux/x64/debug/bundle/cmms_v3
+Gdk-Message: 22:04:47.461: Unable to load  from the cursor theme
+Syncing files to device Linux...                                 1,054ms
+
+Flutter run key commands.
+r Hot reload. 🔥🔥🔥
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on Linux is available at: http://127.0.0.1:41341/GKbT3nKEAD0=/
+The Flutter DevTools debugger and profiler on Linux is available at: http://127.0.0.1:9100?uri=http://127.0.0.1:41341/GKbT3nKEAD0=/
+
+** (com.example.cmms_v3:21740): WARNING **: 22:04:53.899: Unable to retrieve framework response: Message is not valid JSON
+
+** (com.example.cmms_v3:21740): WARNING **: 22:04:53.899: Unable to retrieve framework response: Message is not valid JSON
+
+** (com.example.cmms_v3:21740): WARNING **: 22:04:53.899: Unable to retrieve framework response: Message is not valid JSON
+
+** (com.example.cmms_v3:21740): WARNING **: 22:04:53.899: Unable to retrieve framework response: Message is not valid JSON
+
+** (com.example.cmms_v3:21740): WARNING **: 22:04:53.902: Unable to retrieve framework response: Message is not valid JSON
+
+** (com.example.cmms_v3:21740): WARNING **: 22:04:53.902: Unable to retrieve framework response: Message is not valid JSON
+
+** (com.example.cmms_v3:21740): WARNING **: 22:04:54.174: Unable to retrieve framework response: Message is not valid JSON
+
+** (com.example.cmms_v3:21740): WARNING **: 22:04:54.194: Unable to retrieve framework response: Message is not valid JSON
+
+══╡ EXCEPTION CAUGHT BY SERVICES LIBRARY ╞══════════════════════════════════════════════════════════
+The following assertion was thrown during a platform message callback:
+A KeyDownEvent is dispatched, but the state shows that the physical key is already pressed. If this
+occurs in real application, please report this bug to Flutter. If this occurs in unit tests, please
+ensure that simulated events follow Flutter's event model as documented in `HardwareKeyboard`. This
+was the event: KeyDownEvent#0e9e5(physicalKey: PhysicalKeyboardKey#c222c(usbHidUsage: "0x0007001d",
+debugName: "Key Z"), logicalKey: LogicalKeyboardKey#5989a(keyId: "0x0000007a", keyLabel: "Z",
+debugName: "Key Z"), character: "z", timeStamp: 16:23:06.003000)
+'package:flutter/src/services/hardware_keyboard.dart':
+Failed assertion: line 516 pos 11: '!_pressedKeys.containsKey(event.physicalKey)'
+
+Either the assertion indicates an error in the framework itself, or we should provide substantially
+more information in this error message to help you determine and fix the underlying cause.
+In either case, please report this assertion by filing a bug on GitHub:
+  https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+
+When the exception was thrown, this was the stack:
+#2      HardwareKeyboard._assertEventIsRegular.<anonymous closure> (package:flutter/src/services/hardware_keyboard.dart:516:11)
+#3      HardwareKeyboard._assertEventIsRegular (package:flutter/src/services/hardware_keyboard.dart:536:6)
+#4      HardwareKeyboard.handleKeyEvent (package:flutter/src/services/hardware_keyboard.dart:660:5)
+#5      KeyEventManager.handleRawKeyMessage (package:flutter/src/services/hardware_keyboard.dart:1184:37)
+#6      BasicMessageChannel.setMessageHandler.<anonymous closure> (package:flutter/src/services/platform_channel.dart:261:49)
+#7      _DefaultBinaryMessenger.setMessageHandler.<anonymous closure> (package:flutter/src/services/binding.dart:653:35)
+#8      _invoke2 (dart:ui/hooks.dart:363:13)
+#9      _ChannelCallbackRecord.invoke (dart:ui/channel_buffers.dart:45:5)
+#10     _Channel._drainStep (dart:ui/channel_buffers.dart:229:31)
+(elided 4 frames from class _AssertionError and dart:async)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+Another exception was thrown: A KeyDownEvent is dispatched, but the state shows that the physical key is already pressed. If this occurs in real application, please report this bug to Flutter. If this occurs in unit tests, please ensure that simulated events follow Flutter's event model as documented in `HardwareKeyboard`. This was the event: KeyDownEvent#0e9e5(physicalKey: PhysicalKeyboardKey#c222c(usbHidUsage: "0x0007001d", debugName: "Key Z"), logicalKey: LogicalKeyboardKey#5989a(keyId: "0x0000007a", keyLabel: "Z", debugName: "Key Z"), character: "z", timeStamp: 16:23:06.003000)
+Another exception was thrown: A KeyDownEvent is dispatched, but the state shows that the physical key is already pressed. If this occurs in real application, please report this bug to Flutter. If this occurs in unit tests, please ensure that simulated events follow Flutter's event model as documented in `HardwareKeyboard`. This was the event: KeyDownEvent#0e9e5(physicalKey: PhysicalKeyboardKey#c222c(usbHidUsage: "0x0007001d", debugName: "Key Z"), logicalKey: LogicalKeyboardKey#5989a(keyId: "0x0000007a", keyLabel: "Z", debugName: "Key Z"), character: "z", timeStamp: 16:23:06.003000)
+Another exception was thrown: A KeyDownEvent is dispatched, but the state shows that the physical key is already pressed. If this occurs in real application, please report this bug to Flutter. If this occurs in unit tests, please ensure that simulated events follow Flutter's event model as documented in `HardwareKeyboard`. This was the event: KeyDownEvent#0e9e5(physicalKey: PhysicalKeyboardKey#c222c(usbHidUsage: "0x0007001d", debugName: "Key Z"), logicalKey: LogicalKeyboardKey#5989a(keyId: "0x0000007a", keyLabel: "Z", debugName: "Key Z"), character: "z", timeStamp: 16:23:06.003000)
+
+** (com.example.cmms_v3:21740): WARNING **: 22:04:54.238: Unable to retrieve framework response: Message is not valid JSON
+
+** (com.example.cmms_v3:21740): WARNING **: 22:04:54.282: Unable to retrieve framework response: Message is not valid JSON
+
+** (com.example.cmms_v3:21740): WARNING **: 22:04:54.306: Unable to retrieve framework response: Message is not valid JSON
+Another exception was thrown: A KeyDownEvent is dispatched, but the state shows that the physical key is already pressed. If this occurs in real application, please report this bug to Flutter. If this occurs in unit tests, please ensure that simulated events follow Flutter's event model as documented in `HardwareKeyboard`. This was the event: KeyDownEvent#0e9e5(physicalKey: PhysicalKeyboardKey#c222c(usbHidUsage: "0x0007001d", debugName: "Key Z"), logicalKey: LogicalKeyboardKey#5989a(keyId: "0x0000007a", keyLabel: "Z", debugName: "Key Z"), character: "z", timeStamp: 16:23:06.003000)
+Another exception was thrown: A KeyDownEvent is dispatched, but the state shows that the physical key is already pressed. If this occurs in real application, please report this bug to Flutter. If this occurs in unit tests, please ensure that simulated events follow Flutter's event model as documented in `HardwareKeyboard`. This was the event: KeyDownEvent#0e9e5(physicalKey: PhysicalKeyboardKey#c222c(usbHidUsage: "0x0007001d", debugName: "Key Z"), logicalKey: LogicalKeyboardKey#5989a(keyId: "0x0000007a", keyLabel: "Z", debugName: "Key Z"), character: "z", timeStamp: 16:23:06.003000)
+
+** (com.example.cmms_v3:21740): WARNING **: 22:04:54.330: Unable to retrieve framework response: Message is not valid JSON
+Application finished.
+the Dart compiler exited unexpectedly.
+OpenGL vendor string: Mesa/X.org
+OpenGL renderer string: llvmpipe (LLVM 15.0.6, 128 bits)
+OpenGL core profile version string: 4.5 (Core Profile) Mesa 22.3.6
+OpenGL core profile shading language version string: 4.50
+OpenGL core profile context flags: (none)
+OpenGL core profile profile mask: core profile
+OpenGL core profile extensions:
+OpenGL version string: 4.5 (Compatibility Profile) Mesa 22.3.6
+OpenGL shading language version string: 4.50
+OpenGL context flags: (none)
+OpenGL profile mask: compatibility profile
+OpenGL extensions:
+OpenGL ES profile version string: OpenGL ES 3.2 Mesa 22.3.6
+OpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.20
+OpenGL ES profile extensions:
+GTK_IM_MODULE=cros
+QT_QPA_PLATFORMTHEME=gtk2
+XDG_SESSION_TYPE=wayland
+WAYLAND_DISPLAY_LOW_DENSITY=wayland-1
+WAYLAND_DISPLAY=wayland-0
+PATH=/home/bdaleycid:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/bdaleycid/flutter/bin

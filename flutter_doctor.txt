@@ -1,0 +1,32 @@
+[✓] Flutter (Channel stable, 3.32.0, on Debian GNU/Linux 12 (bookworm) 6.6.76-g027a1f314c8f, locale en_US.UTF-8) [120ms]
+    • Flutter version 3.32.0 on channel stable at /home/bdaleycid/flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision be698c48a6 (2 weeks ago), 2025-05-19 12:59:14 -0700
+    • Engine revision 1881800949
+    • Dart version 3.8.0
+    • DevTools version 2.45.1
+
+[✓] Chrome - develop for the web [36ms]
+    • CHROME_EXECUTABLE = /usr/bin/chromium
+
+[✓] Linux toolchain - develop for Linux desktop [883ms]
+    • Debian clang version 14.0.6
+    • cmake version 3.25.1
+    • ninja version 1.11.1
+    • pkg-config version 1.8.1
+    ! Unable to access driver information using 'eglinfo'.
+      It is likely available from your distribution (e.g.: apt install mesa-utils)
+
+[✓] VS Code (version unknown) [25ms]
+    • VS Code at /usr/share/code
+    • Flutter extension version 3.112.0
+    ✗ Unable to determine VS Code version.
+
+[✓] Connected device (2 available) [623ms]
+    • Linux (desktop) • linux  • linux-x64      • Debian GNU/Linux 12 (bookworm) 6.6.76-g027a1f314c8f
+    • Chrome (web)    • chrome • web-javascript • Chromium 137.0.7151.55 built on Debian GNU/Linux 12 (bookworm)
+
+[✓] Network resources [833ms]
+    • All expected network resources are available.
+
+• No issues found!

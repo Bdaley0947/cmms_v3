@@ -1,0 +1,7 @@
+Found 2 connected devices:
+  Linux (desktop) • linux  • linux-x64      • Debian GNU/Linux 12 (bookworm) 6.6.76-g027a1f314c8f
+  Chrome (web)    • chrome • web-javascript • Chromium 137.0.7151.55 built on Debian GNU/Linux 12 (bookworm)
+
+Run "flutter emulators" to list and start any available device emulators.
+
+If you expected another device to be detected, please run "flutter doctor" to diagnose potential issues. You may also try increasing the time to wait for connected devices with the "--device-timeout" flag. Visit https://flutter.dev/setup/ for troubleshooting tips.

@@ -1,0 +1,15 @@
+OpenGL vendor string: Mesa/X.org
+OpenGL renderer string: llvmpipe (LLVM 15.0.6, 128 bits)
+OpenGL core profile version string: 4.5 (Core Profile) Mesa 22.3.6
+OpenGL core profile shading language version string: 4.50
+OpenGL core profile context flags: (none)
+OpenGL core profile profile mask: core profile
+OpenGL core profile extensions:
+OpenGL version string: 4.5 (Compatibility Profile) Mesa 22.3.6
+OpenGL shading language version string: 4.50
+OpenGL context flags: (none)
+OpenGL profile mask: compatibility profile
+OpenGL extensions:
+OpenGL ES profile version string: OpenGL ES 3.2 Mesa 22.3.6
+OpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.20
+OpenGL ES profile extensions:

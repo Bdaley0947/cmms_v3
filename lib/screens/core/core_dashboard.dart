@@ -1,18 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:cmms_v3/models/sync_action.dart';
 
 class CoreDashboard extends StatelessWidget {
-  final List<SyncAction> syncActions;
+  const CoreDashboard({super.key});
 
-  const CoreDashboard({super.key, required this.syncActions});
+  void _navigate(BuildContext context, String screen) {
+    // Placeholder navigation logic
+    Navigator.pushNamed(context, '/${screen.toLowerCase().replaceAll(' ', '_')}');
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: syncActions.map((action) {
-          return Text('Synced'); // id removed to avoid undefined_getter
-        }).toList(),
+      backgroundColor: Colors.white,
+      appBar: AppBar(title: const Text('Circle Red X – Dashboard')),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: ListView(
+          children: [
+            ListTile(
+              title: const Text('Assets', style: TextStyle(fontWeight: FontWeight.bold)),
+              onTap: () => _navigate(context, 'Assets'),
+            ),
+            ListTile(
+              title: const Text('Service Requests', style: TextStyle(fontWeight: FontWeight.bold)),
+              onTap: () => _navigate(context, 'Service Requests'),
+            ),
+            ListTile(
+              title: const Text('Sync Queue', style: TextStyle(fontWeight: FontWeight.bold)),
+              onTap: () => _navigate(context, 'Sync Queue'),
+            ),
+          ],
+        ),
       ),
     );
   }
