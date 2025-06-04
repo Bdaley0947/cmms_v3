@@ -5,12 +5,13 @@ USE_CLEAR=true
 
 while true; do
   $USE_CLEAR && command -v clear >/dev/null && clear
-  echo "Circle Red X — CMMS v3"
+  echo "Circle Red X — CMMS v4"
   echo "======================="
   echo "1. Run Program"
   echo "2. Compile and Check"
   echo "3. Push to GitHub"
-  echo "4. Exit"
+  echo "4. View Last Analysis Log"
+  echo "x. Exit"
   echo ""
   read -p "Choose an option: " choice
 
@@ -38,15 +39,15 @@ while true; do
     flutter clean
     flutter pub get
     TIMESTAMP=$(date '+%Y%m%d_%H%M%S')
-    flutter analyze > "analyze_log_$TIMESTAMP.txt"
+    flutter analyze | tee "analyze_log.txt" > "analyze_log_$TIMESTAMP.txt"
     if [ $? -ne 0 ]; then
       echo "❌ flutter analyze failed with issues."
     else
       echo "✅ flutter analyze passed."
     fi
-    cat "analyze_log_$TIMESTAMP.txt"
     [ -t 0 ] && read -p "Press enter to return to menu..."
 
+  elif [[ "$choice" == "3" ]]; then
     if [ ! -d "$PROJECT_DIR" ]; then
       echo "❌ ERROR: Project directory not found at $PROJECT_DIR"
       [ -t 0 ] && read -p "Press enter to return to menu..."
@@ -64,11 +65,21 @@ while true; do
     [ -t 0 ] && read -p "Press enter to return to menu..."
 
   elif [[ "$choice" == "4" ]]; then
+    if [ ! -f "$PROJECT_DIR/analyze_log.txt" ]; then
+      echo "❌ No analysis log found at $PROJECT_DIR/analyze_log.txt"
+    else
+      echo "Displaying last analysis log:"
+      echo "============================="
+      cat "$PROJECT_DIR/analyze_log.txt"
+    fi
+    [ -t 0 ] && read -p "Press enter to return to menu..."
+
+  elif [[ "$choice" == "x" || "$choice" == "X" ]]; then
     echo "Exiting menu."
     break
 
   else
-    echo "Invalid option. Please enter 1–4."
+    echo "Invalid option. Please enter 1–4 or x."
     sleep 1
   fi
 done
