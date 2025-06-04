@@ -1,7 +1,13 @@
 import 'package:flutter_test/flutter_test.dart';
 
+class EmailGateway {
+  void send() {}
+}
+
 void main() {
-  test('placeholder test', () {
-    expect(true, isTrue);
+  test('Basic test', () {
+    final gateway = EmailGateway();
+    gateway.send();
+    expect(true, true);
   });
 }

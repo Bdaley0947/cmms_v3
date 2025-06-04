@@ -1,0 +1,94 @@
+Analyzing cmms_v3...                                            
+
+   info • The imported package 'hive_flutter' isn't a dependency of the importing package • lib/main.dart:2:8 • depend_on_referenced_packages
+  error • Target of URI doesn't exist: 'package:hive_flutter/hive_flutter.dart' • lib/main.dart:2:8 • uri_does_not_exist
+  error • Target of URI doesn't exist: 'package:cmms_v3/app.dart' • lib/main.dart:3:8 • uri_does_not_exist
+  error • Undefined name 'Hive' • lib/main.dart:9:9 • undefined_identifier
+  error • Undefined name 'Hive' • lib/main.dart:11:3 • undefined_identifier
+  error • The function 'ServiceRequestAdapter' isn't defined • lib/main.dart:11:24 • undefined_function
+  error • Undefined name 'Hive' • lib/main.dart:12:3 • undefined_identifier
+  error • The function 'IncidentLogAdapter' isn't defined • lib/main.dart:12:24 • undefined_function
+  error • Undefined name 'Hive' • lib/main.dart:14:9 • undefined_identifier
+  error • Undefined name 'Hive' • lib/main.dart:15:9 • undefined_identifier
+  error • Undefined name 'Hive' • lib/main.dart:16:9 • undefined_identifier
+  error • The name 'App' isn't a class • lib/main.dart:18:16 • creation_with_non_type
+   info • The imported package 'hive' isn't a dependency of the importing package • lib/models/incident_log.dart:1:8 • depend_on_referenced_packages
+  error • Target of URI doesn't exist: 'package:hive/hive.dart' • lib/models/incident_log.dart:1:8 • uri_does_not_exist
+  error • Target of URI hasn't been generated: 'package:cmms_v3/models/incident_log.g.dart' • lib/models/incident_log.dart:3:6 • uri_has_not_been_generated
+  error • Undefined name 'HiveType' used as an annotation • lib/models/incident_log.dart:5:1 • undefined_annotation
+  error • Undefined name 'HiveField' used as an annotation • lib/models/incident_log.dart:7:3 • undefined_annotation
+  error • Undefined name 'HiveField' used as an annotation • lib/models/incident_log.dart:10:3 • undefined_annotation
+  error • Undefined name 'HiveField' used as an annotation • lib/models/incident_log.dart:13:3 • undefined_annotation
+  error • Undefined name 'HiveField' used as an annotation • lib/models/incident_log.dart:16:3 • undefined_annotation
+  error • Undefined name 'HiveField' used as an annotation • lib/models/incident_log.dart:19:3 • undefined_annotation
+   info • The imported package 'hive' isn't a dependency of the importing package • lib/models/service_request.dart:1:8 • depend_on_referenced_packages
+  error • Target of URI doesn't exist: 'package:hive/hive.dart' • lib/models/service_request.dart:1:8 • uri_does_not_exist
+  error • Target of URI hasn't been generated: 'package:cmms_v3/models/service_request.g.dart' • lib/models/service_request.dart:3:6 • uri_has_not_been_generated
+  error • Undefined name 'HiveType' used as an annotation • lib/models/service_request.dart:5:1 • undefined_annotation
+  error • Undefined name 'HiveField' used as an annotation • lib/models/service_request.dart:7:3 • undefined_annotation
+  error • Undefined name 'HiveField' used as an annotation • lib/models/service_request.dart:10:3 • undefined_annotation
+  error • Undefined name 'HiveField' used as an annotation • lib/models/service_request.dart:13:3 • undefined_annotation
+  error • Undefined name 'HiveField' used as an annotation • lib/models/service_request.dart:16:3 • undefined_annotation
+  error • Undefined name 'HiveField' used as an annotation • lib/models/service_request.dart:19:3 • undefined_annotation
+   info • The imported package 'hive' isn't a dependency of the importing package • lib/models/sync_action.dart:1:8 • depend_on_referenced_packages
+  error • Target of URI doesn't exist: 'package:hive/hive.dart' • lib/models/sync_action.dart:1:8 • uri_does_not_exist
+  error • Target of URI hasn't been generated: 'package:cmms_v3/models/sync_action.g.dart' • lib/models/sync_action.dart:3:6 • uri_has_not_been_generated
+  error • Undefined name 'HiveType' used as an annotation • lib/models/sync_action.dart:5:1 • undefined_annotation
+  error • Classes can only extend other classes • lib/models/sync_action.dart:6:26 • extends_non_class
+  error • Undefined name 'HiveField' used as an annotation • lib/models/sync_action.dart:7:3 • undefined_annotation
+  error • Undefined name 'HiveField' used as an annotation • lib/models/sync_action.dart:10:3 • undefined_annotation
+  error • Undefined name 'HiveField' used as an annotation • lib/models/sync_action.dart:13:3 • undefined_annotation
+   info • Uses 'await' on an instance of 'List<SyncAction>', which is not a subtype of 'Future' • lib/screens/core/core_dashboard.dart:16:21 • await_only_futures
+  error • The named parameter 'createdAt' is required, but there's no corresponding argument • lib/screens/core/core_dashboard.dart:23:20 • missing_required_argument
+  error • The argument type 'Map<String, String>' can't be assigned to the parameter type 'String'.  • lib/screens/core/core_dashboard.dart:25:16 • argument_type_not_assignable
+  error • The named parameter 'timestamp' isn't defined • lib/screens/core/core_dashboard.dart:26:7 • undefined_named_parameter
+   info • Don't invoke 'print' in production code • lib/services/background_sync_service.dart:7:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/services/background_sync_service.dart:12:5 • avoid_print
+  error • Can't have modifier 'static' here • lib/services/background_sync_service.dart:16:3 • extraneous_modifier
+   info • Don't invoke 'print' in production code • lib/services/background_sync_service.dart:18:7 • avoid_print
+   info • The imported package 'hive' isn't a dependency of the importing package • lib/services/email_gateway.dart:1:8 • depend_on_referenced_packages
+  error • Target of URI doesn't exist: 'package:hive/hive.dart' • lib/services/email_gateway.dart:1:8 • uri_does_not_exist
+  error • The named parameter 'createdAt' is required, but there's no corresponding argument • lib/services/email_gateway.dart:8:23 • missing_required_argument
+  error • The named parameter 'id' is required, but there's no corresponding argument • lib/services/email_gateway.dart:8:23 • missing_required_argument
+  error • The named parameter 'timestamp' isn't defined • lib/services/email_gateway.dart:11:9 • undefined_named_parameter
+  error • Undefined name 'Hive' • lib/services/email_gateway.dart:13:7 • undefined_identifier
+  error • The named parameter 'assetId' is required, but there's no corresponding argument • lib/services/email_gateway.dart:15:24 • missing_required_argument
+  error • The named parameter 'id' is required, but there's no corresponding argument • lib/services/email_gateway.dart:15:24 • missing_required_argument
+  error • The named parameter 'summary' is required, but there's no corresponding argument • lib/services/email_gateway.dart:15:24 • missing_required_argument
+  error • The named parameter 'timestamp' is required, but there's no corresponding argument • lib/services/email_gateway.dart:15:24 • missing_required_argument
+  error • The named parameter 'title' isn't defined • lib/services/email_gateway.dart:16:9 • undefined_named_parameter
+  error • The named parameter 'notes' isn't defined • lib/services/email_gateway.dart:17:9 • undefined_named_parameter
+  error • The named parameter 'reportedAt' isn't defined • lib/services/email_gateway.dart:18:9 • undefined_named_parameter
+  error • Undefined name 'Hive' • lib/services/email_gateway.dart:20:7 • undefined_identifier
+  error • Undefined name 'Hive' • lib/services/email_gateway.dart:23:7 • undefined_identifier
+  error • The named parameter 'assetId' is required, but there's no corresponding argument • lib/services/email_parser.dart:9:14 • missing_required_argument
+  error • The named parameter 'id' is required, but there's no corresponding argument • lib/services/email_parser.dart:9:14 • missing_required_argument
+  error • The named parameter 'summary' is required, but there's no corresponding argument • lib/services/email_parser.dart:9:14 • missing_required_argument
+  error • The named parameter 'title' isn't defined • lib/services/email_parser.dart:10:9 • undefined_named_parameter
+  error • The named parameter 'details' isn't defined • lib/services/email_parser.dart:11:9 • undefined_named_parameter
+  error • The named parameter 'reportedBy' isn't defined • lib/services/email_parser.dart:12:9 • undefined_named_parameter
+  error • The named parameter 'createdAt' is required, but there's no corresponding argument • lib/services/email_parser.dart:16:14 • missing_required_argument
+  error • The named parameter 'id' is required, but there's no corresponding argument • lib/services/email_parser.dart:16:14 • missing_required_argument
+  error • The named parameter 'submittedBy' isn't defined • lib/services/email_parser.dart:19:9 • undefined_named_parameter
+  error • The named parameter 'timestamp' isn't defined • lib/services/email_parser.dart:20:9 • undefined_named_parameter
+   info • The imported package 'connectivity_plus' isn't a dependency of the importing package • lib/services/queue_action.dart:1:8 • depend_on_referenced_packages
+  error • Target of URI doesn't exist: 'package:connectivity_plus/connectivity_plus.dart' • lib/services/queue_action.dart:1:8 • uri_does_not_exist
+   info • The imported package 'hive' isn't a dependency of the importing package • lib/services/queue_action.dart:3:8 • depend_on_referenced_packages
+  error • Target of URI doesn't exist: 'package:hive/hive.dart' • lib/services/queue_action.dart:3:8 • uri_does_not_exist
+  error • Undefined class 'Box' • lib/services/queue_action.dart:5:51 • undefined_class
+  error • The function 'Connectivity' isn't defined • lib/services/queue_action.dart:6:30 • undefined_function
+  error • Undefined name 'ConnectivityResult' • lib/services/queue_action.dart:8:23 • undefined_identifier
+   info • The imported package 'connectivity_plus' isn't a dependency of the importing package • lib/services/service_request_service.dart:2:8 • depend_on_referenced_packages
+  error • Target of URI doesn't exist: 'package:connectivity_plus/connectivity_plus.dart' • lib/services/service_request_service.dart:2:8 • uri_does_not_exist
+   info • The imported package 'hive' isn't a dependency of the importing package • lib/services/service_request_service.dart:4:8 • depend_on_referenced_packages
+  error • Target of URI doesn't exist: 'package:hive/hive.dart' • lib/services/service_request_service.dart:4:8 • uri_does_not_exist
+   info • The imported package 'supabase_flutter' isn't a dependency of the importing package • lib/services/service_request_service.dart:5:8 • depend_on_referenced_packages
+  error • Target of URI doesn't exist: 'package:supabase_flutter/supabase_flutter.dart' • lib/services/service_request_service.dart:5:8 • uri_does_not_exist
+  error • Undefined class 'SupabaseClient' • lib/services/service_request_service.dart:8:9 • undefined_class
+  error • Undefined class 'Box' • lib/services/service_request_service.dart:9:9 • undefined_class
+  error • The method 'Connectivity' isn't defined for the type 'ServiceRequestService' • lib/services/service_request_service.dart:14:32 • undefined_method
+  error • Undefined name 'ConnectivityResult' • lib/services/service_request_service.dart:15:36 • undefined_identifier
+   info • The imported package 'hive' isn't a dependency of the importing package • lib/services/sync_queue_service.dart:1:8 • depend_on_referenced_packages
+  error • Target of URI doesn't exist: 'package:hive/hive.dart' • lib/services/sync_queue_service.dart:1:8 • uri_does_not_exist
+  error • Undefined name 'Hive' • lib/services/sync_queue_service.dart:5:23 • undefined_identifier
+

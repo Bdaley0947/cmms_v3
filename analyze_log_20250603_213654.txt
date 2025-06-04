@@ -1,0 +1,29 @@
+Analyzing cmms_v3...                                            
+
+warning • The include file 'package:flutter_lints/flutter.yaml' in '/home/bdaleycid/cmms_v3/analysis_options.yaml' can't be found when analyzing '/home/bdaleycid/cmms_v3' • analysis_options.yaml:10:10 • include_file_not_found
+  error • Target of URI doesn't exist: 'package:cmms_v3/app.dart' • lib/main.dart:3:8 • uri_does_not_exist
+  error • The name 'App' isn't a class • lib/main.dart:18:16 • creation_with_non_type
+  error • The named parameter 'createdAt' is required, but there's no corresponding argument • lib/screens/core/core_dashboard.dart:23:20 • missing_required_argument
+  error • The argument type 'Map<String, String>' can't be assigned to the parameter type 'String'.  • lib/screens/core/core_dashboard.dart:25:16 • argument_type_not_assignable
+  error • The named parameter 'timestamp' isn't defined • lib/screens/core/core_dashboard.dart:26:7 • undefined_named_parameter
+  error • The named parameter 'createdAt' is required, but there's no corresponding argument • lib/services/email_gateway.dart:8:23 • missing_required_argument
+  error • The named parameter 'id' is required, but there's no corresponding argument • lib/services/email_gateway.dart:8:23 • missing_required_argument
+  error • The named parameter 'timestamp' isn't defined • lib/services/email_gateway.dart:11:9 • undefined_named_parameter
+  error • The named parameter 'assetId' is required, but there's no corresponding argument • lib/services/email_gateway.dart:15:24 • missing_required_argument
+  error • The named parameter 'id' is required, but there's no corresponding argument • lib/services/email_gateway.dart:15:24 • missing_required_argument
+  error • The named parameter 'summary' is required, but there's no corresponding argument • lib/services/email_gateway.dart:15:24 • missing_required_argument
+  error • The named parameter 'timestamp' is required, but there's no corresponding argument • lib/services/email_gateway.dart:15:24 • missing_required_argument
+  error • The named parameter 'title' isn't defined • lib/services/email_gateway.dart:16:9 • undefined_named_parameter
+  error • The named parameter 'notes' isn't defined • lib/services/email_gateway.dart:17:9 • undefined_named_parameter
+  error • The named parameter 'reportedAt' isn't defined • lib/services/email_gateway.dart:18:9 • undefined_named_parameter
+  error • The named parameter 'assetId' is required, but there's no corresponding argument • lib/services/email_parser.dart:9:14 • missing_required_argument
+  error • The named parameter 'id' is required, but there's no corresponding argument • lib/services/email_parser.dart:9:14 • missing_required_argument
+  error • The named parameter 'summary' is required, but there's no corresponding argument • lib/services/email_parser.dart:9:14 • missing_required_argument
+  error • The named parameter 'title' isn't defined • lib/services/email_parser.dart:10:9 • undefined_named_parameter
+  error • The named parameter 'details' isn't defined • lib/services/email_parser.dart:11:9 • undefined_named_parameter
+  error • The named parameter 'reportedBy' isn't defined • lib/services/email_parser.dart:12:9 • undefined_named_parameter
+  error • The named parameter 'createdAt' is required, but there's no corresponding argument • lib/services/email_parser.dart:16:14 • missing_required_argument
+  error • The named parameter 'id' is required, but there's no corresponding argument • lib/services/email_parser.dart:16:14 • missing_required_argument
+  error • The named parameter 'submittedBy' isn't defined • lib/services/email_parser.dart:19:9 • undefined_named_parameter
+  error • The named parameter 'timestamp' isn't defined • lib/services/email_parser.dart:20:9 • undefined_named_parameter
+
