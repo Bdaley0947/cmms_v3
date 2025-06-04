@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/core/core_dashboard.dart';
+import 'package:cmms_v3/screens/dashboard.dart';
 
 void main() {
   runApp(const CMMSApp());
@@ -12,8 +12,8 @@ class CMMSApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Circle Red X',
-      theme: ThemeData.dark(),
-      home: const CoreDashboard(),
+      theme: ThemeData.dark(useMaterial3: true),
+      home: DashboardScreen(),
     );
   }
 }

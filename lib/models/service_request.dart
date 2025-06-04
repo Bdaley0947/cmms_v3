@@ -1,29 +1,20 @@
 class ServiceRequest {
   final String id;
-  final String description;
   final String assetId;
-  final DateTime createdAt;
+  final String submittedBy;
+  final DateTime timestamp;
+  final String description;
 
   ServiceRequest({
     required this.id,
-    required this.description,
     required this.assetId,
-    required this.createdAt,
+    required this.submittedBy,
+    required this.timestamp,
+    required this.description,
   });
 
-  factory ServiceRequest.fromJson(Map<String, dynamic> json) {
-    return ServiceRequest(
-      id: json['id'],
-      description: json['description'],
-      assetId: json['assetId'],
-      createdAt: DateTime.parse(json['createdAt']),
-    );
+  @override
+  String toString() {
+    return 'Request for Asset $assetId by $submittedBy on $timestamp:\n$description';
   }
-
-  Map<String, dynamic> toJson() => {
-        'id': id,
-        'description': description,
-        'assetId': assetId,
-        'createdAt': createdAt.toIso8601String(),
-      };
 }

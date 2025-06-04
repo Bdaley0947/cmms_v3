@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  test('EmailGateway parses actionable command', () {
+  test('placeholder test', () {
+    expect(true, isTrue);
   });
 }

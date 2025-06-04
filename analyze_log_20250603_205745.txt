@@ -1,0 +1,35 @@
+Analyzing cmms_v3...                                            
+
+warning • The label 'Asset' isn't used • test/email_gateway_test.dart:5:1 • unused_label
+  error • Undefined name 'Generator' • test/email_gateway_test.dart:5:8 • undefined_identifier
+  error • Expected to find ';' • test/email_gateway_test.dart:5:18 • expected_token
+  error • Undefined class 'B' • test/email_gateway_test.dart:5:19 • undefined_class
+   info • The variable name 'From' isn't a lowerCamelCase identifier • test/email_gateway_test.dart:6:1 • non_constant_identifier_names
+warning • The value of the local variable 'From' isn't used • test/email_gateway_test.dart:6:1 • unused_local_variable
+  error • Expected to find ';' • test/email_gateway_test.dart:6:1 • expected_token
+  error • Expected an identifier • test/email_gateway_test.dart:6:5 • missing_identifier
+  error • Unexpected text ';' • test/email_gateway_test.dart:6:5 • unexpected_token
+  error • Expected to find ';' • test/email_gateway_test.dart:6:7 • expected_token
+  error • Undefined name 'shiftlead' • test/email_gateway_test.dart:6:7 • undefined_identifier
+  error • Undefined name 'plant' used as an annotation • test/email_gateway_test.dart:6:16 • undefined_annotation
+  error • Undefined class 'Unit' • test/email_gateway_test.dart:8:1 • undefined_class
+warning • The value of the local variable 'tripped' isn't used • test/email_gateway_test.dart:8:6 • unused_local_variable
+  error • Expected to find ';' • test/email_gateway_test.dart:8:6 • expected_token
+  error • Undefined class 'during' • test/email_gateway_test.dart:8:14 • undefined_class
+warning • The value of the local variable 'load' isn't used • test/email_gateway_test.dart:8:21 • unused_local_variable
+  error • Expected to find ';' • test/email_gateway_test.dart:8:21 • expected_token
+  error • The getter 'Requesting' isn't defined for the type 'void Function(Object, dynamic Function(), {Map<String, dynamic>? onPlatform, int? retry, dynamic skip, dynamic tags, String? testOn, Timeout? timeout})' • test/email_gateway_test.dart:8:32 • undefined_getter
+  error • Expected to find ';' • test/email_gateway_test.dart:8:43 • expected_token
+  error • Undefined class 'and' • test/email_gateway_test.dart:8:54 • undefined_class
+warning • The value of the local variable 'possible' isn't used • test/email_gateway_test.dart:8:58 • unused_local_variable
+  error • Expected to find ';' • test/email_gateway_test.dart:8:58 • expected_token
+  error • Undefined class 'PM' • test/email_gateway_test.dart:8:67 • undefined_class
+warning • The value of the local variable 'adjustment' isn't used • test/email_gateway_test.dart:8:70 • unused_local_variable
+  error • Expected to find ';' • test/email_gateway_test.dart:8:70 • expected_token
+  error • Expected an identifier • test/email_gateway_test.dart:8:80 • missing_identifier
+  error • Expected an identifier • test/email_gateway_test.dart:9:1 • missing_identifier
+  error • Expected to find ';' • test/email_gateway_test.dart:9:1 • expected_token
+  error • Unterminated string literal • test/email_gateway_test.dart:12:2 • unterminated_string_literal
+  error • Expected to find ')' • test/email_gateway_test.dart:13:1 • expected_token
+  error • Expected to find '}' • test/email_gateway_test.dart:13:1 • expected_token
+

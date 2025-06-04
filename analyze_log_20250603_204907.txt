@@ -1,0 +1,7 @@
+Analyzing cmms_v3...                                            
+
+   info • The imported package 'uuid' isn't a dependency of the importing package • lib/services/email_gateway.dart:2:8 • depend_on_referenced_packages
+  error • Target of URI doesn't exist: 'package:uuid/uuid.dart' • lib/services/email_gateway.dart:2:8 • uri_does_not_exist
+  error • The name 'Uuid' isn't a class • lib/services/email_gateway.dart:13:15 • creation_with_non_type
+   info • Don't invoke 'print' in production code • test/email_gateway_test.dart:14:5 • avoid_print
+

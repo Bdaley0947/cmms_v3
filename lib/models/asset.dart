@@ -1,21 +1,27 @@
+import 'package:cmms_v3/models/status.dart';
+
 class Asset {
   final String id;
   final String name;
-  final String status;
+  final bool hasCriticalFault;
+  final bool hasMinorFault;
+  final bool isUnderReview;
+  final bool isAwaitingParts;
 
-  Asset({required this.id, required this.name, required this.status});
-
-  factory Asset.fromJson(Map<String, dynamic> json) {
-    return Asset(
-      id: json['id'],
-      name: json['name'],
-      status: json['status'],
-    );
+  AssetStatus get status {
+    if (hasCriticalFault) return AssetStatus.redX;
+    if (isUnderReview) return AssetStatus.redDash;
+    if (isAwaitingParts) return AssetStatus.redSlash;
+    if (hasMinorFault) return AssetStatus.circleRedX;
+    return AssetStatus.green;
   }
 
-  Map<String, dynamic> toJson() => {
-        'id': id,
-        'name': name,
-        'status': status,
-      };
+  Asset({
+    required this.id,
+    required this.name,
+    this.hasCriticalFault = false,
+    this.hasMinorFault = false,
+    this.isUnderReview = false,
+    this.isAwaitingParts = false,
+  });
 }
