@@ -1,0 +1,6 @@
+/home/bdaleycid/cmms_v3/lib/screens/core/core_dashboard.dart:class CoreDashboard extends StatelessWidget {
+/home/bdaleycid/cmms_v3/lib/screens/modules/assets_screen.dart:class AssetsScreen extends StatelessWidget {
+/home/bdaleycid/cmms_v3/lib/screens/modules/reports_screen.dart:class ReportsScreen extends StatelessWidget {
+/home/bdaleycid/cmms_v3/lib/screens/modules/work_orders_screen.dart:class WorkOrdersScreen extends StatelessWidget {
+/home/bdaleycid/cmms_v3/lib/screens/dashboard.dart:class DashboardScreen extends StatelessWidget {
+/home/bdaleycid/cmms_v3/lib/app.dart:class App extends StatelessWidget {

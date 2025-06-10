@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:cmms_v3/theme_override.dart';
-import 'screens/core/core_dashboard.dart';
+import 'navigation/router.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: customTheme,
+    return MaterialApp.router(
       title: 'Circle Red X',
+      routerConfig: AppRouter().config(),
       debugShowCheckedModeBanner: false,
-      home: const CoreDashboard(),
     );
   }
 }

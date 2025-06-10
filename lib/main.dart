@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:cmms_v3/app.dart';
+import 'app.dart';
 
-void main() {
-  runApp(App()); // CONST REMOVED
-}
+void main() => runApp(const App());

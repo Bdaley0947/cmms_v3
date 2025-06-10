@@ -1,0 +1,44 @@
+Analyzing cmms_v3...                                            
+
+   info • The member 'navigatorKey' overrides an inherited member but isn't annotated with '@override' • lib/navigation/router.dart:17:35 • annotate_overrides
+   info • 'onPopPage' is deprecated and shouldn't be used. Use onDidRemovePage instead. This feature was deprecated after v3.16.0-17.0.pre • lib/navigation/router.dart:26:7 • deprecated_member_use
+   info • Don't return 'null' from a method with a return type of 'void' • lib/navigation/router.dart:31:54 • avoid_returning_null_for_void
+  error • The method 'AssetAdapter' isn't defined for the type 'DataService' • lib/services/data_service.dart:10:26 • undefined_method
+  error • The method 'WorkOrderAdapter' isn't defined for the type 'DataService' • lib/services/data_service.dart:11:26 • undefined_method
+  error • Target of URI doesn't exist: 'package:cmms_v3/models/status.dart' • lib_Backup/models/asset.dart:1:8 • uri_does_not_exist
+  error • Undefined class 'AssetStatus' • lib_Backup/models/asset.dart:11:3 • undefined_class
+  error • Undefined name 'AssetStatus' • lib_Backup/models/asset.dart:12:34 • undefined_identifier
+  error • Undefined name 'AssetStatus' • lib_Backup/models/asset.dart:13:31 • undefined_identifier
+  error • Undefined name 'AssetStatus' • lib_Backup/models/asset.dart:14:33 • undefined_identifier
+  error • Undefined name 'AssetStatus' • lib_Backup/models/asset.dart:15:31 • undefined_identifier
+  error • Undefined name 'AssetStatus' • lib_Backup/models/asset.dart:16:12 • undefined_identifier
+  error • Target of URI doesn't exist: 'package:cmms_v3/models/status.dart' • lib_Backup/screens/dashboard.dart:3:8 • uri_does_not_exist
+  error • The named parameter 'location' is required, but there's no corresponding argument • lib_Backup/screens/dashboard.dart:7:5 • missing_required_argument
+  error • The named parameter 'status' is required, but there's no corresponding argument • lib_Backup/screens/dashboard.dart:7:5 • missing_required_argument
+  error • The named parameter 'hasCriticalFault' isn't defined • lib_Backup/screens/dashboard.dart:7:36 • undefined_named_parameter
+  error • The named parameter 'location' is required, but there's no corresponding argument • lib_Backup/screens/dashboard.dart:8:5 • missing_required_argument
+  error • The named parameter 'status' is required, but there's no corresponding argument • lib_Backup/screens/dashboard.dart:8:5 • missing_required_argument
+  error • The named parameter 'hasMinorFault' isn't defined • lib_Backup/screens/dashboard.dart:8:40 • undefined_named_parameter
+  error • The named parameter 'location' is required, but there's no corresponding argument • lib_Backup/screens/dashboard.dart:9:5 • missing_required_argument
+  error • The named parameter 'status' is required, but there's no corresponding argument • lib_Backup/screens/dashboard.dart:9:5 • missing_required_argument
+  error • The named parameter 'isUnderReview' isn't defined • lib_Backup/screens/dashboard.dart:9:37 • undefined_named_parameter
+  error • The named parameter 'location' is required, but there's no corresponding argument • lib_Backup/screens/dashboard.dart:10:5 • missing_required_argument
+  error • The named parameter 'status' is required, but there's no corresponding argument • lib_Backup/screens/dashboard.dart:10:5 • missing_required_argument
+  error • The getter 'label' isn't defined for the type 'String' • lib_Backup/screens/dashboard.dart:25:52 • undefined_getter
+  error • The body might complete normally, causing 'null' to be returned, but the return type, 'IconData', is a potentially non-nullable type • lib_Backup/screens/dashboard.dart:33:12 • body_might_complete_normally
+  error • Undefined class 'AssetStatus' • lib_Backup/screens/dashboard.dart:33:27 • undefined_class
+  error • Undefined name 'AssetStatus' • lib_Backup/screens/dashboard.dart:35:12 • undefined_identifier
+  error • Undefined name 'AssetStatus' • lib_Backup/screens/dashboard.dart:36:12 • undefined_identifier
+  error • Undefined name 'AssetStatus' • lib_Backup/screens/dashboard.dart:37:12 • undefined_identifier
+  error • Undefined name 'AssetStatus' • lib_Backup/screens/dashboard.dart:38:12 • undefined_identifier
+  error • Undefined name 'AssetStatus' • lib_Backup/screens/dashboard.dart:39:12 • undefined_identifier
+  error • Target of URI doesn't exist: 'package:cmms_v3/models/service_request.dart' • lib_Backup/services/email_parser.dart:1:8 • uri_does_not_exist
+  error • Undefined class 'ServiceRequest' • lib_Backup/services/email_parser.dart:4:10 • undefined_class
+  error • The method 'ServiceRequest' isn't defined for the type 'EmailParser' • lib_Backup/services/email_parser.dart:6:12 • undefined_method
+  error • Target of URI doesn't exist: 'package:cmms_v3/models/sync_action.dart' • lib_Backup/services/queue_action.dart:2:8 • uri_does_not_exist
+  error • Undefined class 'SyncAction' • lib_Backup/services/queue_action.dart:5:32 • undefined_class
+  error • The name 'SyncAction' isn't a type, so it can't be used as a type argument • lib_Backup/services/queue_action.dart:5:55 • non_type_as_type_argument
+  error • Target of URI doesn't exist: 'package:cmms_v3/models/sync_action.dart' • lib_Backup/services/service_request_service.dart:3:8 • uri_does_not_exist
+  error • The name 'SyncAction' isn't a type, so it can't be used as a type argument • lib_Backup/services/service_request_service.dart:9:13 • non_type_as_type_argument
+  error • The method 'SyncAction' isn't defined for the type 'ServiceRequestService' • lib_Backup/services/service_request_service.dart:20:27 • undefined_method
+

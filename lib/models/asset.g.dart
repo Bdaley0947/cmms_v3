@@ -1,38 +1,38 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'sync_action.dart';
+part of 'asset.dart';
 
 // **************************************************************************
 // TypeAdapterGenerator
 // **************************************************************************
 
-class SyncActionAdapter extends TypeAdapter<SyncAction> {
+class AssetAdapter extends TypeAdapter<Asset> {
   @override
-  final int typeId = 1;
+  final int typeId = 0;
 
   @override
-  SyncAction read(BinaryReader reader) {
+  Asset read(BinaryReader reader) {
     final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
-    return SyncAction(
-      type: fields[0] as String,
-      payload: fields[1] as String,
-      createdAt: fields[2] as DateTime,
+    return Asset(
+      id: fields[0] as String,
+      name: fields[1] as String,
+      status: fields[2] as String,
     );
   }
 
   @override
-  void write(BinaryWriter writer, SyncAction obj) {
+  void write(BinaryWriter writer, Asset obj) {
     writer
       ..writeByte(3)
       ..writeByte(0)
-      ..write(obj.type)
+      ..write(obj.id)
       ..writeByte(1)
-      ..write(obj.payload)
+      ..write(obj.name)
       ..writeByte(2)
-      ..write(obj.createdAt);
+      ..write(obj.status);
   }
 
   @override
@@ -41,7 +41,7 @@ class SyncActionAdapter extends TypeAdapter<SyncAction> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is SyncActionAdapter &&
+      other is AssetAdapter &&
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }
