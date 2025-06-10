@@ -18,7 +18,8 @@ while true; do
       read -p "Press enter to return to menu..."
       ;;
     2)
-      echo "===== ANALYSIS LOG \$(date \'+%Y-%m-%d %H:%M:%S\') =====" > analysis.log
+      echo "===== ANALYSIS LOG =====" > analysis.log
+      date '+%Y-%m-%d %H:%M:%S' >> analysis.log
       flutter clean >> analysis.log 2>&1
       flutter pub get >> analysis.log 2>&1
       flutter packages pub run build_runner build --delete-conflicting-outputs >> analysis.log 2>&1
@@ -26,6 +27,7 @@ while true; do
       flutter build linux >> analysis.log 2>&1
       read -p "Compile and check complete. Press enter to return to menu..."
       ;;
+
     3)
       flutter clean && flutter pub get
       read -p "Clean build complete. Press enter to return to menu..."

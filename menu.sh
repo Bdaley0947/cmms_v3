@@ -6,10 +6,9 @@ while true; do
   echo "================="
   echo "1. Run App"
   echo "2. Clean, Compile, and Check"
-  echo "3. View build errors only"
-  echo "4. Display last analysis log"
-  echo "5. Push to GitHub"
-  echo "6. Exit"
+  echo "3. View recent build errors only"
+  echo "4. View full analysis log"
+  echo "x. Exit"
   echo ""
   read -p "Choose an option: " option
 
@@ -31,34 +30,18 @@ while true; do
       read -p "Compile and check complete. Press enter to return to menu..."
       ;;
     3)
-      {
-        echo "===== ANALYSIS LOG ====="
-        date "+%Y-%m-%d %H:%M:%S"
-        flutter clean
-        flutter pub get
-        flutter packages pub run build_runner build --delete-conflicting-outputs
-        flutter analyze
-        flutter build linux
-        echo ""
-        echo "Recent Errors:"
-        echo "=============="
-        grep -i "error" analysis.log | tail -n 20
-      } > analysis.log 2>&1
+      echo "Recent Errors:"
+      echo "=============="
+      grep -i error analysis.log | tail -n 20
       read -p "Press enter to return to menu..."
       ;;
     4)
       echo "Full analysis log:"
       echo "=================="
-      cat analysis.log
+      cat analysis.log | tail -n 100
       read -p "Press enter to return to menu..."
       ;;
-    5)
-      git add .
-      git commit -m "Automated commit on $(date +%Y-%m-%d %H:%M:%S)"
-      git push
-      read -p "Push to GitHub complete. Press enter to return to menu..."
-      ;;
-    6)
+    x|X)
       exit 0
       ;;
     *)
